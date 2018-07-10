@@ -1,2 +1,8 @@
-let pizza: [string, boolean, number]
-pizza = ['Kaushik', true, 25]
+type Size = 'small' | 'medium' | 'large';
+
+let pizzaSize: Size = 'small';
+const selectSize = (size: Size) => {
+  pizzaSize = size;
+};
+
+selectSize('medium');
