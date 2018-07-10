@@ -1,9 +1,7 @@
-const pizzaBase = 10;
-const pizzaToppings = 2
+const coupon = 'pizza25';
 
-function calculateCost(pizzaBase: number, pizzaToppings: number) {
-    return pizzaBase + 1.5 * pizzaToppings;
+function validCoupon(coupon: string): string  {
+    return coupon.toUpperCase();
 }
 
-const pizzaPrize = calculateCost(pizzaBase, pizzaToppings);
-console.log(`Pizza costs: ${pizzaPrize}`);
+console.log(`Coupon is ${validCoupon(coupon)}`);
