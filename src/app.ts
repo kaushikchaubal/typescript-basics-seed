@@ -1,8 +1,5 @@
-let pizza: {name: string, quantity: number}
+let sizes: string[]
+sizes = ['small', 'medium', 'large']
 
-pizza = {
-    name: 'Kaushik\'s Pizza',
-    quantity: 5
-}
-
-console.log(pizza);
+let moreSizes: Array<string>
+moreSizes = ['s', 'm', 'l']
