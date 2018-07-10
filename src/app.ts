@@ -1,8 +1,11 @@
-type Size = 'small' | 'medium' | 'large';
+type Pizza = { name: string; toppings: number };
 
-let pizzaSize: Size = 'small';
-const selectSize = (size: Size) => {
-  pizzaSize = size;
-};
+const pizza: Pizza = { name: 'KC Pizza', toppings: 5 };
 
-selectSize('medium');
+const serialized = JSON.stringify(pizza);
+
+function getNameFromJSON(obj: string) {
+  return (JSON.parse(obj) as Pizza).name;
+}
+
+getNameFromJSON(serialized);
