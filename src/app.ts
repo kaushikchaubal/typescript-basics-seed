@@ -1,5 +1,5 @@
-function sumAll(...data: any[]) {
-    return data.reduce((prev, next) => prev + next);
-}
+const topppings = ['tomatoes', 'onions']
+const moreToppings = ['mushrooms']
 
-console.log(sumAll(1,2,3,4));
+const allToppings = [...topppings, ...moreToppings];
+console.log(allToppings)
