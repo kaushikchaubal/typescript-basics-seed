@@ -1,5 +1,9 @@
-const topppings = ['tomatoes', 'onions']
-const moreToppings = ['mushrooms']
+const pizzaBase = 10;
+const pizzaToppings = 2
 
-const allToppings = [...topppings, ...moreToppings];
-console.log(allToppings)
+function calculateCost(pizzaBase: number, pizzaToppings: number) {
+    return pizzaBase + 1.5 * pizzaToppings;
+}
+
+const pizzaPrize = calculateCost(pizzaBase, pizzaToppings);
+console.log(`Pizza costs: ${pizzaPrize}`);
