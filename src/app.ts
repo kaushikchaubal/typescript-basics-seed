@@ -1,6 +1,16 @@
-function multiply (a, b=10) {
-    return a * b;
+const pizza = {
+    name: 'Kaushik\'s Pizza',
+    price: 100,
+    getNameInUpperCase() {
+        return this.name.toUpperCase();
+    }
 }
 
-console.log(multiply(5, 12));
-console.log(multiply(5));
+const toppings = ['tomato', 'onion']; 
+
+const order = {
+    pizza, toppings
+}
+
+console.log(order);
+console.log(pizza.getNameInUpperCase());
