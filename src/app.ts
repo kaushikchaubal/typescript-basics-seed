@@ -1,5 +1,2 @@
-let sizes: string[]
-sizes = ['small', 'medium', 'large']
-
-let moreSizes: Array<string>
-moreSizes = ['s', 'm', 'l']
+let pizza: [string, boolean, number]
+pizza = ['Kaushik', true, 25]
