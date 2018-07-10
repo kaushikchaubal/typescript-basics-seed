@@ -1,16 +1,5 @@
-const pizza = {
-    name: 'Kaushik\'s Pizza',
-    price: 100,
-    getNameInUpperCase() {
-        return this.name.toUpperCase();
-    }
+function sumAll(...data: any[]) {
+    return data.reduce((prev, next) => prev + next);
 }
 
-const toppings = ['tomato', 'onion']; 
-
-const order = {
-    pizza, toppings
-}
-
-console.log(order);
-console.log(pizza.getNameInUpperCase());
+console.log(sumAll(1,2,3,4));
